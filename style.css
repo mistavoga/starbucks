@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+main {
+  height: 200vh;
+}
+
+.header {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 10vh;
+  background: white;
+}
+
+.line {
+  width: 100%;
+  height: 5vh;
+  background: #1e3932;
+  position: sticky;
+  display: flex;
+  align-items: center;
+}
+
+.line > h6 {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+  left: 235px;
+  top: 3px;
+}
+
+#btn {
+  border-radius: 40px;
+  margin-left: 20px;
+  height: 35px;
+  margin-bottom: 8px;
+}
+
+.buttons {
+  display: flex;
+  flex: 0.4;
+  align-items: center;
+}
+
+.location > h6 {
+  font-weight: 600;
+  font-size: 13.3px;
+  margin-right: 20px;
+}
+
+.location {
+  display: flex;
+}
+
+.location > svg {
+  margin-right: 11px;
+}
+
+.location:hover {
+  color: #006341;
+  cursor: pointer;
+}
+
+.star {
+  display: flex;
+  height: 84vh;
+  width: 100%;
+  background: #00a86225;
+  overflow: hidden;
+}
+
+.star > img {
+  position: relative;
+  right: 450px;
+  bottom: 20px;
+  width: 2900px;
+  height: 816px;
+}
+
+.join {
+  position: absolute;
+  left: 14em;
+  top: 27em;
+}
+
+.join > h2 {
+  font-weight: bold;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.join > h5 {
+  font-size: 19px;
+}
+
+#btn__join {
+  border-radius: 40px;
+  background: #008046;
+  position: relative;
+  top: 25px;
+  left: 5px;
+  font-weight: bold;
+}
+
+.join > h4 {
+  position: relative;
+  top: 40px;
+  font-size: 21px;
+}
+
+span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+span:hover {
+  text-decoration: none;
+}
+
+img {
+  margin: 20px;
+  margin-left: 143px;
+  width: 50px;
+  height: 50px;
+}
+
+h5.active {
+  border-bottom: 7px solid #008046;
+}
+
+#navbar > h5 {
+  position: relative;
+  top: 25px;
+  margin-left: 20px;
+  height: 54px;
+  background: ;
+  font-weight: bold;
+  font-size: 14.5px;
+}
+
+h5:hover {
+  color: #006341;
+  cursor: pointer;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    height: 9vh;
+  }
+  img {
+    margin-left: 30px;
+  }
+  #navbar > h5 {
+    top: 20px;
+    height: 54px;
+  }
+}
