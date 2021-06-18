@@ -27,7 +27,7 @@ main {
 
 .line {
   position: fixed;
-  top: 95px;
+  top: 94px;
   width: 100%;
   height: 5vh;
   background: #1e3932;
@@ -140,7 +140,7 @@ img {
   height: 50px;
 }
 
-h5.active {
+.active {
   border-bottom: 7px solid #008046;
 }
 
@@ -233,6 +233,44 @@ h5:hover {
   text-align: center;
   display: flex;
   flex-direction: column;
+}
+
+.slider {
+  width: 100%;
+  height: 50vh;
+  background: ;
+  display: flex;
+  flex-direction: column;
+}
+
+.sec1 {
+  flex: 0.4;
+  background: #00804615;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.sec1 > h4 {
+  position: relative;
+  bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.sec1 > ul {
+  position: absolute;
+  bottom: 0;
+}
+
+.sec1 > ul > li {
+  display: inline;
+  font-size: 28px;
+  padding: 40px;
+  padding-bottom: 15px;
+  cursor: pointer;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 1300px) {
