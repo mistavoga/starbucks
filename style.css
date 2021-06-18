@@ -27,7 +27,7 @@ main {
 
 .line {
   position: fixed;
-  top: 97px;
+  top: 95px;
   width: 100%;
   height: 5vh;
   background: #1e3932;
@@ -147,16 +147,28 @@ h5.active {
 .start {
   width: 100%;
   height: 60vh;
-  background: #eeeeee;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.start > h4 {
-  flex: 0.5;
-  background: black;
+.start__container1 {
+  flex: 0.4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  width: 100%;
 }
 
-.start > h6 {
+.start__container1 > h4 {
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.start__container1 > h6 {
+  font-size: 15px;
 }
 
 #navbar > h5 {
@@ -178,6 +190,51 @@ h5:hover {
   align-items: center;
 }
 
+.start__container2 {
+  flex: 0.6;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.one {
+  width: 350px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-right: 2em;
+}
+
+.one > h4 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.two > h4 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.three > h4 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.two {
+  width: 350px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-right: 2em;
+}
+
+.three {
+  width: 350px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
 @media screen and (max-width: 1300px) {
   .header {
     height: 9vh;
@@ -195,7 +252,7 @@ h5:hover {
   }
 
   .line {
-    top: 87px;
+    top: 86px;
   }
 
   .buttons {
